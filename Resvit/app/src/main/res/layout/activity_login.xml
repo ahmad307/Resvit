@@ -97,6 +97,8 @@
         android:id="@+id/loginButton"
         android:layout_width="97dp"
         android:layout_height="52dp"
+        android:onClick="Login"
+        tools:layout_editor_absoluteX="128dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_orange_light"
