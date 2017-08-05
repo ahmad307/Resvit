@@ -44,7 +44,6 @@ public class Business {
     private String website;
     private String number;
     private LinkedList<Products> items;
-
     public Business(){
         TotalNumber++;
     }

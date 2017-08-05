@@ -4,26 +4,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:title="Category 1" />
+            android:title="Coworking spaces" />
         <item
             android:id="@+id/nav_gallery"
-            android:title="Category 2" />
+            android:title="Resturaunts" />
         <item
             android:id="@+id/nav_slideshow"
-            android:title="Category 3" />
+            android:title="Sports" />
         <item
             android:id="@+id/nav_manage"
-            android:title="category 4"/>
+            android:title=""/>
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Balance">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:title="Share"/>
+                android:id="@+id/credit_val"
+                android:title= "credit: 1000L.E."/>
             <item
                 android:id="@+id/nav_send"
-                android:title="Send" />
+                android:title="Charge" />
         </menu>
     </item>
 
