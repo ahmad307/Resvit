@@ -13,6 +13,7 @@ import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -33,23 +34,29 @@ import java.util.Map;
 
 public class Business {
     public static int TotalNumber = 0;
+    private static LinkedList<Business> allItems;
     private LinkedList<String> reviews;
     private String name;
-    private String cateogry;
+    private String category;
     private String about;
     private double rating;
-    private Location location;
+    private String location;
+    private String website;
+    private String number;
+    //private LinkedList<products> items;
 
     public Business(){
         TotalNumber++;
     }
 
-    public Business(String name, String cateogry, String about, double rating){
+    public Business(String name, String location, String number, String website, String about){
         this.name = name;
-        this.cateogry = cateogry;
+        this.location = location;
+        this.number = number;
+        this.website = website;
         this.about = about;
-        this.rating = rating;
         TotalNumber++;
+        allItems.add(this);
     }
 
     public void setReviews(String review){
@@ -68,12 +75,12 @@ public class Business {
         return  name;
     }
 
-    public void setCateogry(String cateogry){
-        this.cateogry = cateogry;
+    public void setCategory(String cateogry){
+        this.category = cateogry;
     }
 
-    public String getCateogry(){
-        return  cateogry;
+    public String getCategory(){
+        return  category;
     }
 
     public void setAbout(String about){
@@ -92,11 +99,23 @@ public class Business {
         return rating;
     }
 
-    public void setLocation(Location location){
+    public void setLocation(String location){
         this.location = location;
     }
 
-    public Location getLocation(){
+    public String getLocation(){
         return location;
     }
+
+    public void setWebsite(String website){this.website = website;}
+
+    public String getWebsite(){return website;}
+
+    public void setNumber(String number){this.number = number;}
+
+    public String getNumber(){return number;}
+
+    /*public void setItems(products product){items.add(product);}
+
+    public LinkedList<products> getItems(){return items;}*/
 }
