@@ -43,18 +43,19 @@ public class Business {
     private String location;
     private String website;
     private String number;
-    //private LinkedList<products> items;
+    private LinkedList<Products> items;
 
     public Business(){
         TotalNumber++;
     }
 
-    public Business(String name, String location, String number, String website, String about){
+    public Business(String name, String location, String number, String website, String about, String category){
         this.name = name;
         this.location = location;
         this.number = number;
         this.website = website;
         this.about = about;
+        this.category = category;
         TotalNumber++;
         allItems.add(this);
     }
@@ -115,7 +116,7 @@ public class Business {
 
     public String getNumber(){return number;}
 
-    /*public void setItems(products product){items.add(product);}
+    public void setItems(Products product){items.add(product);}
 
-    public LinkedList<products> getItems(){return items;}*/
+    public LinkedList<Products> getItems(){return items;}
 }

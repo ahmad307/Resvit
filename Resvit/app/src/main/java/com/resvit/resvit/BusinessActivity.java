@@ -18,6 +18,9 @@ public class BusinessActivity extends AppCompatActivity {
         EditText location = (EditText) findViewById(R.id.location);
         EditText mobile = (EditText) findViewById(R.id.number);
         EditText website = (EditText) findViewById(R.id.website);
-        //Business currentItem = new Business(name.getText().toString());
+        EditText category = (EditText) findViewById(R.id.category);
+        EditText description = (EditText) findViewById(R.id.description);
+        Business currentItem = new Business(name.getText().toString(),location.getText().toString(),mobile.getText().toString(),
+                website.getText().toString(),description.getText().toString(),category.getText().toString());
     }
 }

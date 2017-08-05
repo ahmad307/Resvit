@@ -3,9 +3,6 @@
     <color name="colorPrimary">#f0ae08<!--#3F51B5--></color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-<<<<<<< HEAD
     <color name="themeColor">#f0ae08</color>
-=======
     <color name="colorcustomyellow">#daa520</color>
->>>>>>> 965d9d15c798c5f08b229ed4c682face281fc324
 </resources>
